@@ -1,5 +1,9 @@
 # game.py
 
+#imports
+import random
+
+#welcome message
 print("Rock, Paper, Scissors, Shoot!")
 
 # CAPTURE INPUTS
@@ -14,8 +18,12 @@ if user_choice not in ["Rock", "Paper", "Scissors"]:
     exit()
 
 # GENERATE COMPUTER SELECTION
+#need to create a random selection
 
-print("GENERATING...")
+computer_choice = random.choice(["Rock", "Paper", "Scissors"])
+
+print("------")
+print("Computer Chose: ",computer_choice)
 
 # DETERMINE THE WINNER
 
