@@ -13,14 +13,15 @@ print("---------")
 print("You chose", user_choice)
 
 # VALIDATE INPUTS
-if user_choice not in ["Rock", "Paper", "Scissors"]:
+options = ["Rock", "Paper", "Scissors"]
+if user_choice not in options:
     print("Invalid selection, please try again")
     exit()
 
 # GENERATE COMPUTER SELECTION
 #need to create a random selection
 
-computer_choice = random.choice(["Rock", "Paper", "Scissors"])
+computer_choice = random.choice(options)
 
 print("------")
 print("Computer Chose: ",computer_choice)
