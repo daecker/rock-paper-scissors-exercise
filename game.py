@@ -9,10 +9,7 @@ print("---------")
 print("You chose", user_choice)
 
 # VALIDATE INPUTS
-if user_choice in ["Rock", "Paper", "Scissors"]:
-    print("Valid")
-
-else:
+if user_choice not in ["Rock", "Paper", "Scissors"]:
     print("Invalid selection, please try again")
     exit()
 
