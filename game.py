@@ -58,6 +58,28 @@ import random
 def my_message(): ##creating function for the purpose of testing
     return "HELLO" 
 
+def determine_winner(user_choice,computer_choice)
+     winners = {
+        "rock":{
+            "rock": None,
+            "paper": "paper",
+            "scissors": "rock",
+        },
+        "paper":{
+            "rock": "paper",
+            "paper": None,
+            "scissors": "scissors",
+        },
+        "scissors":{
+            "rock": "rock",
+            "paper": "scissors",
+            "scissors": None,
+        },
+    }
+
+    winning_choice = winners[user_choice][computer_choice]
+    return winning_choice
+
 #use this for testing purposes. it means if this script is executed from the command-line
 if __name__ == "__main__":
         
