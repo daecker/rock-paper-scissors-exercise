@@ -58,8 +58,8 @@ import random
 def my_message(): ##creating function for the purpose of testing
     return "HELLO" 
 
-def determine_winner(user_choice,computer_choice)
-     winners = {
+def determine_winner(user_choice, computer_choice):
+    winners = {
         "rock":{
             "rock": None,
             "paper": "paper",
@@ -76,8 +76,7 @@ def determine_winner(user_choice,computer_choice)
             "scissors": None,
         },
     }
-
-    winning_choice = winners[user_choice][computer_choice]
+    winning_choice = [user_choice] [computer_choice]
     return winning_choice
 
 #use this for testing purposes. it means if this script is executed from the command-line
